@@ -3,23 +3,23 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="hero bg-base-200 min-h-screen relative">
-      <div className="hero-content  flex-col lg:flex-row-reverse">
-        <div className="w-1/2">
+      <div className="hero-content w-screen  justify-between flex-col lg:flex-row-reverse">
+        <div className="w-1/3">
           <Image
             src="/logo.svg"
             alt="hero"
             width={1000}
             height={1000}
-            className="h-full w-full"
+            className="h-1/2 w-1/2 md:h-full md:w-full"
             layout="responsive"
           />
         </div>
-        <div className="max-w-1/2">
-          <h1 className="text-6xl font-bold">
+        <div className="max-w-md sm:max-w-3xl flex flex-col justify-center sm:block">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
             Give a child a chance to{" "}
             <span className="text-primary">qualitative education</span>
           </h1>
-          <p className="py-6">
+          <p className="py-10 sm:py-6">
             90% of romanians don’t know the metrics for measuring air quality
             <br />
             60% of students don’t think their teachers are prepared to teach

@@ -21,7 +21,7 @@ export default function About() {
         />
       </div>
       <div className="pt-20 flex flex-col w-full items-center gap-10 z-10">
-        <div className="hero-content flex-col lg:flex-row-reverse ">
+        <div className="hero-content flex-col-reverse lg:flex-row-reverse ">
           <div className="basis-2/3 flex gap-10 justify-center h-full flex-col">
             <div className="h-80 w-full rounded-lg shadow-xl">
               <Image
@@ -43,8 +43,10 @@ export default function About() {
             </div>
           </div>
           <div className="px-10">
-            <h1 className="text-6xl font-bold">Wait, who?</h1>
-            <p className="py-20 pt-10 text-xl">
+            <h1 className="text-2xl sm:text-3xl  md:text-6xl font-bold">
+              Wait, who?
+            </h1>
+            <p className="py-20 pt-10 text-xl max-w-sm sm:max-w-2xl">
               We are Alacrity Education, a youth-founded NGO, created by young
               people for young people, driven by the desire to promote
               high-quality STEAM (Science, Technology, Engineering, and

@@ -10,7 +10,7 @@ export default function AirBox() {
       <p className=" z-10 text-2xl font-semibold">
         A better view for education.
       </p>
-      <p className=" z-10 text-xl max-w-4xl py-10 ">
+      <p className=" z-10 text-xl max-w-4xl py-10 px-4 sm:px-0">
         <span className="text-seconadry ">Alacrity Airbox</span> is our latest
         project. It is an <span className="text-primary">educational kit </span>
         that aims to teach high-school students about the{" "}

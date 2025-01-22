@@ -37,7 +37,7 @@ achieve that in our NGO.`,
   ];
   return (
     <div className="h-max bg-base-200 flex flex-col items-center py-10  pb-20">
-      <div className="text-5xl font-semibold py-16">
+      <div className="text-2xl sm:text-5xl font-semibold py-16">
         Perks. Only some of them.
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -51,7 +51,7 @@ achieve that in our NGO.`,
 
 const Card = ({ title, text, link, linkText, image }: CardProps) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-base-100 md:w-80 lg:w-96 shadow-xl">
       <figure className="h-40  bg-primary">
         <div className="invert h-full w-full"> {image}</div>
       </figure>

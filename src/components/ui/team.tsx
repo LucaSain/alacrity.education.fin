@@ -70,10 +70,10 @@ export default function Team() {
 
   return (
     <div className="h-max bg-base-200 flex flex-col items-center py-10 ">
-      <div className="text-5xl font-semibold py-10">
+      <div className="text-3xl md:text-4xl lg:text-5xl font-semibold py-10">
         Meet the team behind <span className="text-primary">Alacrity</span>
       </div>
-      <div className="grid grid-cols-5 grid-rows-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-2">
         {members.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
