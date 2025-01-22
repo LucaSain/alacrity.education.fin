@@ -3,19 +3,19 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="hero bg-base-200 min-h-screen relative">
-      <div className="hero-content w-screen  justify-between flex-col lg:flex-row-reverse">
+      <div className="hero-content w-screen   justify-between flex-col lg:flex-row-reverse">
         <div className="w-1/3">
           <Image
             src="/logo.svg"
             alt="hero"
             width={1000}
             height={1000}
-            className="h-1/2 w-1/2 md:h-full md:w-full"
+            className="h-1/2 w-1/2 md:h-full md:w-full dark:invert dark:saturate-0 dark:mix-blend-screen"
             layout="responsive"
           />
         </div>
         <div className="max-w-md sm:max-w-3xl flex flex-col justify-center sm:block">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center sm:text-start ">
             Give a child a chance to{" "}
             <span className="text-primary">qualitative education</span>
           </h1>
@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
           <a
             href="https://buymeacoffee.com/alacrity_education"
-            className="btn btn-primary"
+            className="btn btn-primary z-10 dark:shadow-xl"
           >
             Donate
           </a>

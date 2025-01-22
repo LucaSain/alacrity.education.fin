@@ -70,7 +70,7 @@ export default function Team() {
 
   return (
     <div className="h-max bg-base-200 flex flex-col items-center py-10 ">
-      <div className="text-3xl md:text-4xl lg:text-5xl font-semibold py-10">
+      <div className="text-2xl md:text-4xl lg:text-5xl font-semibold py-10">
         Meet the team behind <span className="text-primary">Alacrity</span>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-2">
@@ -84,7 +84,7 @@ export default function Team() {
 
 const TeamMember = ({ name, role, image }: TeamMember) => {
   return (
-    <div className="h-64 w-64 p-4 flex flex-col gap-2 items-center justify-center">
+    <div className="h-64 w-40 md:h-64 md:w-64 p-4 flex flex-col gap-2 items-center justify-center">
       <div className="avatar">
         <div className="w-32 h-32 rounded">
           <Image
@@ -96,8 +96,8 @@ const TeamMember = ({ name, role, image }: TeamMember) => {
           />
         </div>
       </div>
-      <div className="text-lg font-bold">{name}</div>
-      <div className="text-sm">{role}</div>
+      <div className="text-sm sm:text-lg font-bold">{name}</div>
+      <div className="text-xs sm:text-sm">{role}</div>
     </div>
   );
 };

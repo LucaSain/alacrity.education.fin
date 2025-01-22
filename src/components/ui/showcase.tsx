@@ -36,11 +36,11 @@ achieve that in our NGO.`,
     },
   ];
   return (
-    <div className="h-max bg-base-200 flex flex-col items-center py-10  pb-20">
+    <div className="h-max bg-base-200 flex flex-col items-center py-10 pb-20">
       <div className="text-2xl sm:text-5xl font-semibold py-16">
         Perks. Only some of them.
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
